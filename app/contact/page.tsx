@@ -241,7 +241,7 @@ export default function ContactPage() {
                   <Mail className="w-5 h-5 text-gold shrink-0" />
                   <div>
                     <span className="font-semibold text-navy block">Email Enquiries</span>
-                    <span className="font-mono text-xs">naval@royalcaribbean-shipyard.com</span>
+                    <span className="font-mono text-xs">info@royalcaribbeanconstructions.com</span>
                   </div>
                 </div>
 

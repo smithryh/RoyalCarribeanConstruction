@@ -153,7 +153,7 @@ export function Footer() {
               </span>
               <span className="flex items-center gap-1">
                 <Mail className="w-3 h-3 text-gold" />
-                naval@royalcaribbean-shipyard.com
+                info@royalcaribbeanconstructions.com
               </span>
             </div>
           </div>
