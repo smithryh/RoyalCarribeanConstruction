@@ -4,28 +4,27 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/lib/i18n";
-import { Anchor, Mail, Phone, MapPin, Send, ShieldCheck, FileText } from "lucide-react";
+import { Anchor, Mail, Phone, MapPin, Send, ShieldCheck } from "lucide-react";
 
 export function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="w-full bg-offwhite-low border-t border-gray-200">
+    <footer className="w-full bg-offwhite border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Column 1: Brand Info */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <Image
-                src="/logo/logo.png"
-                alt="Royal Caribbean Logo"
-                width={36}
-                height={36}
-                className="h-8 w-auto object-contain"
-              />
-              <span className="font-playfair text-lg font-bold tracking-tight text-navy">
-                ROYAL CARIBBEAN
-              </span>
+              <div className="relative h-12 w-auto flex items-center justify-center">
+                <Image
+                  src="/logo/logo.jpg"
+                  alt="Royal Caribbean Logo"
+                  width={160}
+                  height={48}
+                  className="object-contain h-10 w-auto"
+                />
+              </div>
             </div>
             <p className="font-jakarta text-xs sm:text-sm text-slateText leading-relaxed">
               {t("footer.aboutCompany")}
