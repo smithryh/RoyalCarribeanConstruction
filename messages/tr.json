@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetlerimiz",
+    "projects": "Projeler",
+    "shipyard": "Tersane",
+    "process": "İnşa Süreci",
+    "news": "Haberler",
+    "contact": "İletişim",
+    "requestQuote": "Teklif İste",
+    "operationsPhone": "+90 (216) 494 8000",
+    "navalOps": "Deniz Operasyonları"
+  },
+  "hero": {
+    "eyebrow": "GEMİ MÜHENDİSLİĞİ VE LÜKS YAT İNŞASI",
+    "headline": "Denizlerde Mükemmelliği İnşa Ediyoruz.",
+    "description": "Son teknoloji süperyat üretimi, hassas ticari gemi inşası ve özel gemi mühendisliğinde öncüyüz. Tuzla, Türkiye'deki dünya standartlarındaki tersane tesislerimizde, asırlık denizcilik zanaatını en ileri hidrodinamik teknolojisiyle buluşturuyoruz.",
+    "exploreProjects": "Projelerimizi Keşfedin",
+    "requestQuote": "Teklif İste",
+    "vesselsBuilt": "İnşa Edilen Gemi",
+    "maxCapacity": "Maks Kapasite",
+    "certifiedYard": "Sertifikalı Tersane",
+    "flagshipVessel": "Amiral Gemisi",
+    "flagshipName": "Gövde 48m Aurora",
+    "flagshipStage": "Son Donatım ve Deniz Denemeleri Aşaması"
+  },
+  "stats": {
+    "capabilityTitle": "01 / KAPASİTE",
+    "capabilityVal": "185.000 m²",
+    "capabilityDesc": "Tuzla'da modern kapalı tersane havuzları ve montaj hangarları.",
+    "integrationTitle": "02 / ENTEGRASYON",
+    "integrationVal": "%100 Özgün",
+    "integrationDesc": "Tam yaşam döngülü gemi mimarisi, yapısal CFD ve deniz mühendisliği.",
+    "heritageTitle": "03 / MİRAS",
+    "heritageVal": "35+ Yıl",
+    "heritageDesc": "Sürekli denizcilik mirası ve üstün lüks amiral gemileri üretimi.",
+    "complianceTitle": "04 / UYUMLULUK",
+    "complianceVal": "ISO 9001/14001",
+    "complianceDesc": "Lloyd's Register ve DNV ile uyumlu katı küresel kalite standartları."
+  },
+  "footer": {
+    "aboutCompany": "Özel gemi mimarisi, mega yat mühendisliği ve en yüksek küresel standartlarda üretilen devlet ve özel deniz taşıtlarının zirvesi.",
+    "addressTitle": "Tuzla Özel Deniz Bölgesi Tersanesi",
+    "addressText": "Evliya Çelebi Mah. Tersaneler Cad. 34944 Tuzla, İstanbul / Türkiye",
+    "quickLinks": "Hızlı Bağlantılar",
+    "marineDivisions": "Denizcilik Departmanları",
+    "newsletterTitle": "Bülten ve İletişim",
+    "newsletterDesc": "Denizcilik istihbarat bültenlerimize, denize indirme törenlerimize ve teknik filo güncellemelerimize abone olun.",
+    "placeholderEmail": "Gemi mimarı / kurumsal e-posta",
+    "joinBtn": "Katıl",
+    "rights": "© 2025 Royal Caribbean Gemi İnşaa ve Deniz Mühendisliği A.Ş. Tüm denizcilik hakları saklıdır.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Gövde İnşa Koşulları"
+  },
+  "common": {
+    "learnMore": "Daha Fazla Bilgi",
+    "viewDetails": "Detayları İncele",
+    "submit": "Gönder",
+    "loading": "İşleniyor...",
+    "success": "Başarılı",
+    "error": "Hata"
+  }
+}

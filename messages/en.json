@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "shipyard": "Shipyard",
+    "process": "Construction Process",
+    "news": "News",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "operationsPhone": "+90 (216) 494 8000",
+    "navalOps": "Naval Operations"
+  },
+  "hero": {
+    "eyebrow": "NAVAL ARCHITECTURE & LUXURY VESSEL CONSTRUCTION",
+    "headline": "Building Excellence Across the Seas.",
+    "description": "Pioneering state-of-the-art superyacht manufacturing, precision commercial vessel construction, and bespoke naval engineering. Operating from world-class shipyard facilities in Tuzla, Türkiye, we combine centuries of maritime craftsmanship with cutting-edge hydrodynamics.",
+    "exploreProjects": "Explore Our Projects",
+    "requestQuote": "Request a Quote",
+    "vesselsBuilt": "Vessels Built",
+    "maxCapacity": "Max Capacity",
+    "certifiedYard": "Certified Yard",
+    "flagshipVessel": "Flagship Vessel",
+    "flagshipName": "Hull 48m Aurora",
+    "flagshipStage": "Final Outfitting & Sea Trials Stage"
+  },
+  "stats": {
+    "capabilityTitle": "01 / CAPABILITY",
+    "capabilityVal": "185,000 m²",
+    "capabilityDesc": "Modern covered shipyard drydocks & assembly halls in Tuzla.",
+    "integrationTitle": "02 / INTEGRATION",
+    "integrationVal": "100% In-House",
+    "integrationDesc": "Full lifecycle naval architecture, structural CFD & marine design.",
+    "heritageTitle": "03 / HERITAGE",
+    "heritageVal": "35+ Years",
+    "heritageDesc": "Continuous maritime heritage delivering sovereign luxury flagships.",
+    "complianceTitle": "04 / COMPLIANCE",
+    "complianceVal": "ISO 9001/14001",
+    "complianceDesc": "Rigid global quality metrics aligned with Lloyd's Register & DNV."
+  },
+  "footer": {
+    "aboutCompany": "Pinnacle of bespoke naval architecture, mega-yacht engineering, and state-of-the-art sovereign maritime vessels fabricated to the highest global standards.",
+    "addressTitle": "Tuzla Naval Zone Yard",
+    "addressText": "Evliya Çelebi Mah. Tersaneler Cad. 34944 Tuzla, Istanbul / Türkiye",
+    "quickLinks": "Quick Links",
+    "marineDivisions": "Marine Divisions",
+    "newsletterTitle": "Newsletter & Contact",
+    "newsletterDesc": "Subscribe to our naval intelligence briefings, launch ceremonies, and technical fleet updates.",
+    "placeholderEmail": "Naval architect / corporate email",
+    "joinBtn": "Join",
+    "rights": "© 2025 Royal Caribbean Shipbuilding & Maritime Engineering Inc. All naval rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms of Hull Construction"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "submit": "Submit",
+    "loading": "Processing...",
+    "success": "Success",
+    "error": "Error"
+  }
+}
