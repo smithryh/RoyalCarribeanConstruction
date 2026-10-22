@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useLanguage } from "@/lib/i18n";
 import { projectsData } from "@/data/projects";
 import {
@@ -38,7 +37,7 @@ export default function HomePage() {
             {/* Accent Pill & Hairline */}
             <div className="flex items-center gap-2 mb-4">
               <span className="w-8 h-[2px] bg-gold"></span>
-              <span className="font-mono text-xs uppercase tracking-widest text-gold font-semibold">
+              <span className="font-mono text-xs uppercase text-gold font-semibold tracking-wider">
                 {t("hero.eyebrow")}
               </span>
             </div>
@@ -192,16 +191,16 @@ export default function HomePage() {
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-6 h-[1px] bg-gold"></span>
                 <span className="font-mono text-xs uppercase text-gold font-semibold tracking-wider">
-                  Turnkey Marine Execution
+                  {t("home.turnkeyTitle")}
                 </span>
               </div>
               <h2 className="font-playfair text-3xl sm:text-4xl text-navy font-bold">
-                Crafted for Distinction
+                {t("home.craftedTitle")}
               </h2>
               <div className="w-12 h-1 bg-gold mt-2"></div>
             </div>
             <p className="font-jakarta text-sm sm:text-base text-slateText max-w-lg">
-              Comprehensive turnkey shipyard solutions from initial hydrodynamic lofting to final sovereign ocean handover.
+              {t("home.craftedDesc")}
             </p>
           </div>
 
@@ -220,31 +219,19 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-playfair text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">
-                  Custom Superyacht Construction
+                  {language === "tr" ? "Lüks Yat İnşası" : "Custom Superyacht Construction"}
                 </h3>
                 <p className="font-jakarta text-xs sm:text-sm text-slateText mb-6 leading-relaxed">
-                  Full custom and semi-custom luxury motor yachts fabricated in high-tensile marine steel and grade 5083 aluminium.
+                  {language === "tr"
+                    ? "Yüksek mukavemetli çelik ve 5083 alüminyum alaşımı ile üretilen özel ve yarı özel lüks motor yatlar."
+                    : "Full custom and semi-custom luxury motor yachts fabricated in high-tensile marine steel and grade 5083 aluminium."}
                 </p>
-                <ul className="flex flex-col gap-2 mb-8 font-jakarta text-xs sm:text-sm text-slateText">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Computational fluid dynamics hull optimization</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Sound & vibration attenuation below 42 dBA</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Hybrid & dual-fuel propulsion integration</span>
-                  </li>
-                </ul>
                 <div className="mt-auto pt-4 border-t border-gray-100">
                   <Link
                     href="/services/luxury-yacht-construction"
                     className="inline-flex items-center gap-2 font-jakarta text-xs sm:text-sm font-semibold text-navy group-hover:text-gold transition-colors"
                   >
-                    <span>Explore Superyachts</span>
+                    <span>{t("common.learnMore")}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -264,31 +251,19 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-playfair text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">
-                  Commercial & Specialized Vessels
+                  {language === "tr" ? "Ticari ve Özel Gemiler" : "Commercial & Specialized Vessels"}
                 </h3>
                 <p className="font-jakarta text-xs sm:text-sm text-slateText mb-6 leading-relaxed">
-                  Fast passenger catamarans, offshore oceanographic vessels, and pilot craft built to rigid international classification codes.
+                  {language === "tr"
+                    ? "Uluslararası klas standartlarında inşa edilen hızlı yolcu katamaranları ve açık deniz araştırma gemileri."
+                    : "Fast passenger catamarans, offshore oceanographic vessels, and pilot craft built to rigid international classification codes."}
                 </p>
-                <ul className="flex flex-col gap-2 mb-8 font-jakarta text-xs sm:text-sm text-slateText">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>High-speed wave-piercing hull configurations</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>IMO Tier III emission standards compliance</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Heavy-lift cargo & tender deck installations</span>
-                  </li>
-                </ul>
                 <div className="mt-auto pt-4 border-t border-gray-100">
                   <Link
                     href="/services/commercial-shipbuilding"
                     className="inline-flex items-center gap-2 font-jakarta text-xs sm:text-sm font-semibold text-navy group-hover:text-gold transition-colors"
                   >
-                    <span>View Commercial Specs</span>
+                    <span>{t("common.learnMore")}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -308,31 +283,19 @@ export default function HomePage() {
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-playfair text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">
-                  Refit, Conversion & Modernization
+                  {language === "tr" ? "Yenileme ve Modernizasyon" : "Refit, Conversion & Modernization"}
                 </h3>
                 <p className="font-jakarta text-xs sm:text-sm text-slateText mb-6 leading-relaxed">
-                  Major mid-life structural lengthening, modern teak re-decking, luxury cabin remodels, and complete automation overhauls.
+                  {language === "tr"
+                    ? "Kapsamlı gövde uzatma, kamara yenileme, tik güverte kaplama ve seyrüsefer otomasyon yenilemeleri."
+                    : "Major mid-life structural lengthening, modern teak re-decking, luxury cabin remodels, and complete automation overhauls."}
                 </p>
-                <ul className="flex flex-col gap-2 mb-8 font-jakarta text-xs sm:text-sm text-slateText">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Hull lengthening & bulbous bow retrofitting</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Lloyd's 5-year and 10-year special surveys</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-gold shrink-0" />
-                    <span>Advanced Awlgrip topcoat refinishing booths</span>
-                  </li>
-                </ul>
                 <div className="mt-auto pt-4 border-t border-gray-100">
                   <Link
                     href="/services/vessel-refitting"
                     className="inline-flex items-center gap-2 font-jakarta text-xs sm:text-sm font-semibold text-navy group-hover:text-gold transition-colors"
                   >
-                    <span>Learn About Refit</span>
+                    <span>{t("common.learnMore")}</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -342,7 +305,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 4: FEATURED FLEET & PROJECTS (Clean Off-White) */}
+      {/* SECTION 4: FEATURED FLEET & PROJECTS */}
       <section className="w-full bg-offwhite py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
@@ -350,11 +313,11 @@ export default function HomePage() {
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-6 h-[1px] bg-gold"></span>
                 <span className="font-mono text-xs uppercase text-gold font-semibold tracking-wider">
-                  Proven Portfolio
+                  {t("home.portfolioSubtitle")}
                 </span>
               </div>
               <h2 className="font-playfair text-3xl sm:text-4xl text-navy font-bold">
-                Notable Commissions
+                {t("home.portfolioTitle")}
               </h2>
             </div>
 
@@ -368,7 +331,7 @@ export default function HomePage() {
                     : "text-slateText hover:text-navy"
                 }`}
               >
-                All Fleets
+                {t("home.allFleets")}
               </button>
               <button
                 onClick={() => setActiveFilter("superyacht")}
@@ -378,7 +341,7 @@ export default function HomePage() {
                     : "text-slateText hover:text-navy"
                 }`}
               >
-                Superyachts
+                {t("home.superyachts")}
               </button>
               <button
                 onClick={() => setActiveFilter("expedition")}
@@ -388,7 +351,7 @@ export default function HomePage() {
                     : "text-slateText hover:text-navy"
                 }`}
               >
-                Expedition
+                {t("home.expedition")}
               </button>
               <button
                 onClick={() => setActiveFilter("commercial")}
@@ -398,7 +361,7 @@ export default function HomePage() {
                     : "text-slateText hover:text-navy"
                 }`}
               >
-                Commercial
+                {t("home.commercial")}
               </button>
             </div>
           </div>
@@ -446,7 +409,7 @@ export default function HomePage() {
                       <span className="block text-navy font-bold">
                         {project.gt}
                       </span>
-                      <span>Volume</span>
+                      <span>GT</span>
                     </div>
                     <div>
                       <span className="block text-navy font-bold">
@@ -474,7 +437,7 @@ export default function HomePage() {
               href="/projects"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-white text-navy border border-gray-300 hover:border-gold font-jakarta text-sm font-semibold transition-all shadow-sm"
             >
-              <span>View All 78 Completed Commissions</span>
+              <span>{t("home.viewAllCommissions")}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -510,14 +473,14 @@ export default function HomePage() {
             <div className="flex items-center gap-2 mb-2">
               <span className="w-8 h-[1px] bg-gold"></span>
               <span className="font-mono text-xs uppercase text-gold font-semibold tracking-wider">
-                Tuzla Naval Infrastructure
+                {t("home.infraSubtitle")}
               </span>
             </div>
             <h2 className="font-playfair text-3xl sm:text-4xl text-navy font-bold mb-6">
-              World-Class Infrastructure in Türkiye
+              {t("home.infraTitle")}
             </h2>
             <p className="font-jakarta text-base text-slateText leading-relaxed mb-8">
-              Located in Istanbul's historic maritime gateway of Tuzla, our shipyard facilities integrate heavy industrial lifting capabilities with dust-controlled finishing clean-rooms.
+              {t("home.infraDesc")}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -527,10 +490,10 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col">
                   <h4 className="font-playfair text-base font-bold text-navy">
-                    400-Ton Gantry Cranes
+                    {t("home.gantryTitle")}
                   </h4>
                   <p className="font-jakarta text-xs text-slateText mt-1">
-                    Multi-block module consolidation and safe hull turning.
+                    {t("home.gantryDesc")}
                   </p>
                 </div>
               </div>
@@ -541,10 +504,10 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col">
                   <h4 className="font-playfair text-base font-bold text-navy">
-                    120m Enclosed Drydock
+                    {t("home.drydockTitle")}
                   </h4>
                   <p className="font-jakarta text-xs text-slateText mt-1">
-                    Year-round climate stabilization for hull painting and outfitting.
+                    {t("home.drydockDesc")}
                   </p>
                 </div>
               </div>
@@ -555,10 +518,10 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col">
                   <h4 className="font-playfair text-base font-bold text-navy">
-                    In-House CFD Tank
+                    {t("home.cfdTitle")}
                   </h4>
                   <p className="font-jakarta text-xs text-slateText mt-1">
-                    Numerical wave pattern testing and drag coefficient simulations.
+                    {t("home.cfdDesc")}
                   </p>
                 </div>
               </div>
@@ -569,10 +532,10 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col">
                   <h4 className="font-playfair text-base font-bold text-navy">
-                    Full Class Certifications
+                    {t("home.classTitle")}
                   </h4>
                   <p className="font-jakarta text-xs text-slateText mt-1">
-                    Permanent surveyor inspection stations for Lloyd's, ABS, & RINA.
+                    {t("home.classDesc")}
                   </p>
                 </div>
               </div>
@@ -599,14 +562,14 @@ export default function HomePage() {
               <div className="flex items-center gap-2 mb-4">
                 <Anchor className="w-5 h-5 text-gold" />
                 <span className="font-mono text-xs uppercase text-gold font-bold tracking-widest">
-                  Commissioning & Consultation
+                  {t("home.ctaEyebrow")}
                 </span>
               </div>
               <h2 className="font-playfair text-3xl sm:text-4xl text-navy font-bold mb-4">
-                Commission Your Next Maritime Masterpiece.
+                {t("home.ctaTitle")}
               </h2>
               <p className="font-jakarta text-base sm:text-lg text-slateText mb-8">
-                Whether preparing a technical tender for a specialized commercial fleet or commissioning a bespoke 70-meter tri-deck mega-yacht, our master naval architects will guide you through engineering specifications, shipyard drydock slots, and project timelines.
+                {t("home.ctaDesc")}
               </p>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <Link
@@ -614,29 +577,29 @@ export default function HomePage() {
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-gold text-white font-jakarta text-sm font-semibold shadow-md hover:bg-gold-muted transition-all"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Schedule a Shipyard Tour</span>
+                  <span>{t("home.ctaSchedule")}</span>
                 </Link>
                 <Link
                   href="/projects"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-white text-navy border border-gray-300 hover:border-gold font-jakarta text-sm font-semibold transition-all shadow-sm"
                 >
                   <Download className="w-4 h-4" />
-                  <span>Download Fleet Portfolio</span>
+                  <span>{t("home.ctaDownload")}</span>
                 </Link>
               </div>
 
               <div className="flex flex-wrap items-center gap-6 mt-8 pt-6 border-t border-gray-200 font-mono text-xs text-slateText">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-gold" />
-                  <span>Strict NDA Confidentiality</span>
+                  <span>{t("home.nda")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="w-4 h-4 text-gold" />
-                  <span>Bespoke Naval Warranty</span>
+                  <span>{t("home.warranty")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Globe2 className="w-4 h-4 text-gold" />
-                  <span>Direct Sea Delivery Worldwide</span>
+                  <span>{t("home.delivery")}</span>
                 </div>
               </div>
             </div>
